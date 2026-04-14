@@ -1,0 +1,17 @@
+{
+  "name": "resume-job-matcher",
+  "version": "0.1.0",
+  "description": "Resume Parsing and Job Matching system (boilerplate)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "pipeline": "node src/main.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "pdf-parse": "^1.1.4"
+  },
+  "license": "MIT"
+}
