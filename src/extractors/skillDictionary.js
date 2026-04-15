@@ -116,7 +116,6 @@ const SKILL_DICTIONARY = [
   'OOP',
   'Object Oriented Programming',
   'Data Structures',
-  'Algorithms',
   'System Design',
   'Design Patterns',
   'Operating Systems',
@@ -132,19 +131,44 @@ const SKILL_DICTIONARY = [
   'Selenium',
 
   // Security
-  'Authentication',
-  'Authorization',
   'OAuth',
   'JWT',
-  'Encryption',
 
   //Other Important Keywords
-  'Debugging',
-  'Problem Solving',
-  'Scalability',
-  'Performance Optimization',
   'Agile',
-  'Scrum'
+  'Scrum',
+
+  'Fortran',
+  'Unix',
+  'Linux',
+  'Unix Shell',
+  'Bash',
+  'Shell Scripting',
+  'RTOS',
+  'Embedded Systems',
+  'FPGA',
+  'GPU Programming',
+  'HPC',
+  'MPI',
+  'OpenMP',
+  'Linear Algebra',
+  'Signal Processing',
+  'Mathematical Modeling',
+  'Computational Physics',
+
+  'gRPC',
+  'Protobuf',
+  'Telemetry',
+  'Chef',
+  'Prometheus',
+  'Grafana',
+  'Kibana',
+  'Logstash',
+  'ELK Stack',
+  'Configuration Management',
+  'CI/CD Pipelines',
+  'Continuous Integration',
+  'Continuous Deployment',
 ];
 
 module.exports = {

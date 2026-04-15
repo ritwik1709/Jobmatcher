@@ -80,13 +80,32 @@ function ResultsDashboard({ result }) {
                   key={job?.jobId || job?.role}
                   className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm"
                 >
-                  <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                     <h5 className="text-base font-semibold text-slate-900">{job?.role || 'Unknown role'}</h5>
                     <span
                       className={`rounded-full border px-3 py-1 text-xs font-semibold ${scoreTone(matchingScore)}`}
                     >
-                      Match: {matchingScore}%
+                      {matchingScore}% Match
                     </span>
+                  </div>
+
+                  {/* Progress Bar */}
+                  <div className="mb-3 flex items-center gap-2">
+                    <div className="flex-1">
+                      <div className="relative h-2 overflow-hidden rounded-full bg-slate-200">
+                        <div
+                          className={`h-full transition-all duration-500 ${
+                            matchingScore >= 75
+                              ? 'bg-emerald-500'
+                              : matchingScore >= 40
+                                ? 'bg-amber-500'
+                                : 'bg-rose-500'
+                          }`}
+                          style={{ width: `${matchingScore}%` }}
+                        />
+                      </div>
+                    </div>
+                    <span className="text-xs font-semibold text-slate-700 tabular-nums">{matchingScore}%</span>
                   </div>
 
                   <p className="mt-2 text-sm text-slate-600">{job?.aboutRole || 'No role summary provided.'}</p>
